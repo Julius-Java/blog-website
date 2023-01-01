@@ -1,0 +1,10 @@
+<%- include("./partials/header") %>
+    <h1>Home</h1>
+    <p class="postBody"><%= startingContent %> </p>
+
+    <%  postContent.forEach((post) => { %>
+        <h1><%= post.postHeading %> <span class="postTime"><em><%= post.postTime %> </em></span> </h1>
+        <p class="postBody"><%= post.postBody %> </p>
+    <%  }) %>
+
+<%- include("./partials/footer") %>
