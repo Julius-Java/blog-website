@@ -38,6 +38,7 @@ app.get("/compose", (req, res) => {
 })
 
 app.get("/posts/:postName", (req, res) => {
+  // Check if the postName is in the list of posts on the site
   let postName = req.params.postName
   let postStatus = postFinder.postChecker(posts, postName);
   console.log(postStatus);
