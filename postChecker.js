@@ -5,5 +5,8 @@ exports.postChecker = (posts, postName) => {
         } else {
             console.log("Not found!");
         }
+        // console.log(post.postHeading + " - Heading")
+        // console.log("+++++++++++++++");
+        // console.log(postName + " - post name")
     })
 }
